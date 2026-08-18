@@ -427,7 +427,7 @@ header::after {
 .avatar-circulo img {
     width: 100%;
     height: 100%;
-    object-fit:cover;
+    object-fit: cover;
     object-position: center 1%;
     /* bajá o subí este % hasta que quede bien */
 }
@@ -701,6 +701,21 @@ h3 {
     padding: 100px 60px 80px 60px;
     position: relative;
 }
+
+.contenido-flex--invertido {
+    flex-direction: row-reverse;
+    margin-top: 3rem;
+}
+
+
+.contenido-flex--invertido .imagen-container1 img {
+    transform: rotate(3deg);
+}
+
+.contenido-flex--invertido .imagen-container1 img:hover {
+    transform: rotate(0deg);
+}
+
 
 
 /* ---------------------------------- dentro de bypazarquitectura  ----------------------------------*/
@@ -1412,7 +1427,8 @@ h3 {
 
 .footer-info {
     margin-top: 2rem;
-    margin-bottom: 2rem;   /* ← agregá esta línea */
+    margin-bottom: 2rem;
+    /* ← agregá esta línea */
     color: var(--crema-oscura);
     font-style: italic;
 }
